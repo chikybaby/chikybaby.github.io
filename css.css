@@ -1,0 +1,107 @@
+
+body {
+	color: black;
+	font-family: "Open Sans";
+	background-image: url("back.jpg");
+	background-repeat: repeat;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+a:visited {
+	color: white;
+}
+#sub:link {
+	color: red;
+}
+#sub:visited{
+	color: red;
+}
+a:link {
+	color: white;
+}
+a:hover{
+	color: pink;
+}
+.grid-container {
+	length: 100%;
+	width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Header Header Header"
+    "Side Body Body Body"
+    "Side Body Body Body"
+    "Side Body Body Body"
+    "Footer Footer Footer Footer";
+}
+
+.Body { grid-area: Body; }
+
+.Side { grid-area: Side; }
+
+#Birth {
+	border-style: hidden;
+	border-color: #f1ff00;
+	color: black;
+}
+
+.Header {
+	grid-area: Header;
+	border-style: solid;
+	background-color: black;
+	color: white;
+	padding: 35px;
+	margin: 0px;
+	text-align: center;
+}
+
+.Footer {
+	grid-area: Footer;
+	background-color: #000000;
+	margin: 0;
+	color: #ffffff;
+	text-align: center;
+	padding: 0;
+}
+
+img {
+	float: right;
+	margin: 0px;
+}
+
+
+
+.title {
+	margin-bottom: 10px;
+	text-align:center;
+	width: 210px;
+	color:green;
+	border: solid black 2px;
+}
+
+input[type="button"]{
+	background-color:green;
+	color: black;
+	border: solid black 2px;
+	width:100%
+}
+
+input[type="text"] {
+	background-color:white;
+	border: solid black 2px;
+	width:100%
+}
+
+.Nav {
+	padding: 45px;
+	float: left;
+}
